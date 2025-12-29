@@ -1,0 +1,10 @@
+streamlit
+torch
+torchvision
+torchaudio
+ultralytics
+opencv-python
+pillow
+cleanfid
+torchmetrics
+tqdm
