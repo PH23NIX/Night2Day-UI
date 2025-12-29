@@ -1,0 +1,16 @@
+# Core app dependencies
+streamlit
+ultralytics
+opencv-python
+pillow
+tqdm
+clean-fid
+torchmetrics
+
+# These will be installed after PyTorch is installed
+# (so we don’t include torch, torchvision, torchaudio here)
+
+# Optional utilities
+matplotlib
+numpy
+pandas
