@@ -6,13 +6,13 @@ import io
 from PIL import Image
 from modelUsageToCropping import Night2DayInference, CONFIG as CROPPING_CONFIG
 
-# ------------ Logger to capture print output in UI ------------
+# Logger to capture print output in UI
 class StreamlitLogger(io.StringIO):
     def write(self, txt):
         super().write(txt)
         st.session_state["console_output"] += txt
 
-# -------- Initialize session state if not present ----------
+# Initialize session state if not present
 if "console_output" not in st.session_state:
     st.session_state["console_output"] = ""
 
@@ -230,3 +230,4 @@ elif page == "Model Usage to Cropping":
             st.write("No converted images found.")
 
 st.write("---")
+
